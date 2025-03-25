@@ -1,0 +1,334 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <title>Website</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=EB+Garamond:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- GSAP CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Glide.js CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+  
+  <!-- Optional: Theme styles -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css">
+  <style>
+    * {
+      outline: 0px solid red;
+    }
+  </style>
+</head>
+
+<body id="body" class="">
+  <div class="bg-[url('herobg.webp')] grid grid-cols-1 md:grid-cols-2 items-center px-6 py-8 md:px-12 gap-8 md:py-36 md:h-[50vh]">
+    <!-- Left Content -->
+    <div class="space-y-8 text-left md:text-left text-balance">
+      <div class="space-y-4">
+        <!-- Pre-Headline (Social Proof) -->
+        <p class="fade-in text-xs md:text-lg font-semibold text-green-600">500+ SMMA Owners Past $50k/mo</p>
+        
+        <!-- Headline (Problem & Solution) -->
+        <h1 class="fade-in font-garamond text-gray-700 text-3xl md:text-5xl font-bold">
+          Scale your SMMA to $50k/mo in 90 Days
+        </h1>
+        
+        <!-- Supporting Text -->
+        <p class="fade-in text-lg md:text-xl text-gray-500">
+          We've helped agency owners stuck at $5k-$10k months break past plateaus
+          using proven client acquisition systems and high-ticket sales strategies.
+        </p>
+      </div>
+      <!-- CTA Button -->
+      <a href="#" class="fade-in shadow-[4px_4px_12px_2px] shadow-gray-700 md:text-2xl bg-green-600 text-white font-bold py-3 px-6 md:py-6 md:px-12 rounded-3xl inline-block">
+        Apply for Mentorship
+      </a>
+    </div>
+    <!-- Right Column (Video with Arrow Image) -->
+    <div class="w-full relative">
+      
+      
+      
+      <!-- Video -->
+      <div class="fade-in relative w-full aspect-video rounded-lg overflow-hidden shadow-lg">
+        <!-- Arrow Image (Hidden on Mobile) 
+        <img src="up-arrow.png" alt="Upward Arrow" class="absolute scale-125 z-10 bottom-[250px] left-1/2 transform -translate-x-1/2 w-16 md:w-20 hidden md:block">-->
+        <iframe class="w-full h-full rounded-xl" src="https://www.youtube.com/embed/EbQ6gb_H9ps?si=-Mi534ksXAqNHzR3&rel=0&modestbranding=1&showinfo=0&autoplay=0&controls=1" frameborder="0" allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="bg-orange-100 grid grid-cols-1 md:grid-cols-2 items-center gap-8 px-6 py-12 md:px-12 md:p-36 md:h-[50vh]">
+    <!-- Left (Hero Image with Floating Elements) -->
+    <div class="relative w-full max-w-lg mx-auto">
+      <div class="fade-in w-full aspect-[1] rounded-lg">
+        <img id="fadeImage" src="hero.webp" alt="Success Image" class="w-full h-full object-cover scale-x-[-1] transition-all duration-500">
+      </div>
+      
+      <!-- Floating Elements -->
+      <div class="fade-in shadow-sm shadow-black absolute top-12 right-16 bg-white p-2 md:p-3 rounded-lg shadow-md flex items-center space-x-2 text-xs md:text-xl">
+        <i class="fas fa-dollar-sign text-green-600"></i>
+        <span class="text-neutral-500">$50k+/mo</span>
+      </div>
+      <div class="fade-in shadow-sm shadow-black absolute top-24 left-4 bg-white p-2 md:p-3 rounded-lg shadow-md flex items-center space-x-2 text-xs md:text-xl">
+        <i class="fas fa-chart-line text-blue-600"></i>
+        <span class="text-neutral-500">10M+ views</span>
+      </div>
+      <div class="fade-in shadow-sm shadow-black absolute bottom-4 left-4 bg-white p-2 md:p-3 rounded-lg shadow-md flex items-center space-x-2 text-xs md:text-xl">
+        <i class="fas fa-user-friends text-blue-600"></i>
+        <span class="text-neutral-500">500+ Clients</span>
+      </div>
+      <div class="fade-in shadow-sm shadow-black absolute bottom-16 right-2 bg-white p-2 md:p-3 rounded-lg shadow-md flex items-center space-x-2 text-xs md:text-xl">
+        <i class="fas fa-clock text-yellow-600"></i>
+        <span class="text-neutral-500">Scaled in 90 Days</span>
+      </div>
+    </div>
+    
+    
+    <!-- Right Column (Content) -->
+    <div class="space-y-6 text-left">
+      <h2 class="fade-in text-2xl md:text-3xl font-garamond font-bold text-gray-700">Unlock the Proven System to Scale to $50k+/mo</h2>
+      <p class="fade-in text-lg text-gray-500">
+        Learn how top SMMA owners rapidly scale past plateaus with tested client acquisition strategies and retention systems.
+      </p>
+      
+      <!-- Bullet Points -->
+      <ul class="space-y-3 text-gray-700">
+        <li class="fade-in flex items-center">
+          <i class="fas fa-check-circle text-green-600 mr-3"></i> 100% proven & repeatable system.
+        </li>
+        <li class="fade-in flex items-center">
+          <i class="fas fa-check-circle text-green-600 mr-3"></i> Works even if you're starting from scratch.
+        </li>
+        <li class="fade-in flex items-center">
+          <i class="fas fa-check-circle text-green-600 mr-3"></i> No paid ads or unnecessary complexity.
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+  
+  <div class="bg-white grid grid-cols-1 items-center py-12 md:px-12 md:py-36">
+    <div class="space-y-3 m-3 text-center">
+      <h2 class="fade-in text-2xl md:text-3xl font-garamond font-bold text-gray-700">Client Interviews</h2>
+      <p class="fade-in text-lg text-gray-500">
+        Real Interviews with my clients(Videos yet to be uploaded)
+      </p>
+    </div>
+    <div class="glide my-6">
+      <div class="glide__track" data-glide-el="track">
+        <ul class="glide__slides">
+          <li class="glide__slide transition-all duration-200"><img src="img1.webp" alt="Slide 1"></li>
+          <li class="glide__slide transition-all duration-200"><img src="img2.webp" alt="Slide 2"></li>
+          <li class="glide__slide transition-all duration-200"><img src="img3.webp" alt="Slide 3"></li>
+          <li class="glide__slide transition-all duration-200"><img src="img4.webp" alt="Slide 4"></li>
+          <li class="glide__slide transition-all duration-200"><img src="img5.webp" alt="Slide 5"></li>
+          <li class="glide__slide transition-all duration-200"><img src="img6.webp" alt="Slide 6"></li>
+        </ul>
+      </div>
+      
+      <!-- Navigation (Optional) -->
+      <div class="glide__arrows" data-glide-el="controls">
+        <button class="glide__arrow glide__arrow--left bg-green-400 md:text-4xl  md:w-16 aspect-square" data-glide-dir="<">‹</button>
+        <button class="glide__arrow glide__arrow--right bg-green-400 md:text-4xl md:w-16 aspect-square" data-glide-dir=">">›</button>
+      </div>
+    </div>
+  </div>
+  <!-- FAQ Section -->
+  <section class="bg-emerald-700 text-white py-12 md:py-36 px-6 md:px-12">
+    <div class="max-w-3xl mx-auto">
+      <!-- Title -->
+      <h2 class="fade-in text-2xl md:text-4xl font-bold text-center mb-10">Frequently Asked Questions</h2>
+      
+      <!-- FAQ Container -->
+      <div class="space-y-6">
+        
+        <!-- FAQ Item -->
+        <div class="fade-in border-b border-gray-100">
+          <button class="flex justify-between items-center w-full text-left text-lg md:text-xl font-semibold py-4 transition-all faq-toggle">
+            What makes this program different?
+            <span class="arrow transition-transform duration-300 transform rotate-0">▼</span>
+          </button>
+          <p class="faq-answer opacity-0 max-h-0 overflow-hidden transition-all duration-500 text-gray-300 mt-2 text-base md:text-lg">
+            Our program focuses on personalized strategies, real-world case studies, and proven scaling methods.
+          </p>
+        </div>
+        
+        <!-- FAQ Item -->
+        <div class="fade-in border-b border-gray-100">
+          <button class="flex justify-between items-center w-full text-left text-lg md:text-xl font-semibold py-4 transition-all faq-toggle">
+            How soon can I see results?
+            <span class="arrow transition-transform duration-300 transform rotate-0">▼</span>
+          </button>
+          <p class="faq-answer opacity-0 max-h-0 overflow-hidden transition-all duration-500 text-gray-300 mt-2 text-base md:text-lg">
+            Most clients see noticeable growth within 30-60 days if they follow the system consistently.
+          </p>
+        </div>
+        
+        <!-- FAQ Item -->
+        <div class="fade-in border-b border-gray-100">
+          <button class="flex justify-between items-center w-full text-left text-lg md:text-xl font-semibold py-4 transition-all faq-toggle">
+            Do I need experience to start?
+            <span class="arrow transition-transform duration-300 transform rotate-0">▼</span>
+          </button>
+          <p class="faq-answer opacity-0 max-h-0 overflow-hidden transition-all duration-500 text-gray-300 mt-2 text-base md:text-lg">
+            No! Whether you're just starting or scaling, we tailor strategies to your level.
+          </p>
+        </div>
+        <!-- FAQ Item -->
+        <div class="fade-in border-b border-gray-100">
+          <button class="flex justify-between items-center w-full text-left text-lg md:text-xl font-semibold py-4 transition-all faq-toggle">
+            What if I have a busy schedule?
+            <span class="arrow transition-transform duration-300 transform rotate-0">▼</span>
+          </button>
+          <p class="faq-answer opacity-0 max-h-0 overflow-hidden transition-all duration-500 text-gray-300 mt-2 text-base md:text-lg">
+            The program is designed for flexibility, allowing you to implement strategies at your own pace.
+          </p>
+        </div>
+        
+        <!-- FAQ Item -->
+        <div class="fade-in border-b border-gray-100">
+          <button class="flex justify-between items-center w-full text-left text-lg md:text-xl font-semibold py-4 transition-all faq-toggle">
+            Is there any support if I get stuck?
+            <span class="arrow transition-transform duration-300 transform rotate-0">▼</span>
+          </button>
+          <p class="faq-answer opacity-0 max-h-0 overflow-hidden transition-all duration-500 text-gray-300 mt-2 text-base md:text-lg">
+            Yes! You'll get access to coaching calls, community support, and detailed guidance to help you succeed.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- JavaScript -->
+  <script>
+    document.querySelectorAll(".faq-toggle").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        let answer = btn.nextElementSibling;
+        let arrow = btn.querySelector(".arrow");
+        
+        if (answer.classList.contains("opacity-0")) {
+          // Expand
+          answer.style.maxHeight = answer.scrollHeight + "px";
+          answer.classList.remove("opacity-0");
+        } else {
+          // Collapse
+          answer.style.maxHeight = "0px";
+          answer.classList.add("opacity-0");
+        }
+        
+        arrow.classList.toggle("rotate-180");
+      });
+    });
+  </script>
+  
+  
+  <!-- Content Goes Here -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ["Inter", "sans-serif"],
+            garamond: ["EB Garamond", "serif"],
+          }
+        }
+      }
+    }
+  </script>
+  <script>
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            gsap.to(entry.target, {
+              opacity: 1,
+              scale: 1,
+              duration: 0.6,
+              ease: "power2.out",
+              delay: 0.15,
+            });
+          } else {
+            gsap.to(entry.target, {
+              opacity: 0,
+              scale: 0.8,
+              duration: 0.6,
+              ease: "power2.out",
+            });
+          }
+        });
+      }, { threshold: 0.2 }
+    );
+    
+    document.querySelectorAll(".fade-in").forEach((element) => {
+      gsap.set(element, { opacity: 0, scale: 0.8 }); // Initial state
+      observer.observe(element);
+    });
+    
+    gsap.fromTo("#fadeImage", { filter: "grayscale(100%)" }, // Start as fully grayscale
+      {
+        filter: "grayscale(40%)", // End with full color
+        duration: 1,
+        ease: "power1.out",
+        scrollTrigger: {
+          trigger: "#fadeImage",
+          start: "top center", // Start animation when into viewport
+          end: "center center", // Fully colored by 50%
+          scrub: true, // Smooth transition while scrolling
+        }
+      }
+    );
+  </script>
+  <!-- Glide.js JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/glide.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      let glide = new Glide(".glide", {
+        type: "carousel",
+        startAt: 0,
+        perView: 3,
+        focusAt: "center",
+        peek: { before: 10, after: 10 },
+        breakpoints: {
+          1024: { perView: 2 },
+          768: { perView: 1, peek: { before: 25, after: 25 } },
+        },
+      });
+      
+      function updateSlideStyles() {
+        let slides = document.querySelectorAll(".glide__slide");
+        
+        // Apply grayscale to all slides first
+        slides.forEach((slide) => (slide.style.filter = "grayscale(100%)"));
+        
+        // Determine perView based on screen size
+        let perView = window.innerWidth >= 1024 ? 3 : window.innerWidth >= 768 ? 2 : 1;
+        
+        // Set active index based on screen size
+        let activeIndex = glide.index + (perView === 1 ? 3 : 4);
+        
+        // Ensure index is within bounds before removing grayscale
+        if (slides[activeIndex]) {
+          slides[activeIndex].style.filter = "grayscale(0%)";
+        }
+      }
+      
+      glide.on("run.after", updateSlideStyles);
+      glide.mount();
+      
+      // Ensure initial state is applied
+      updateSlideStyles();
+    });
+  </script>
+</body>
+
+</html> 
