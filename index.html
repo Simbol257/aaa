@@ -1,334 +1,650 @@
  <!DOCTYPE html>
-<html lang="en">
+ <html lang="en">
+ 
+ <head>
+   <!-- Meta Tags -->
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Scale your SMMA to $50k/month in 90 days with proven client acquisition systems. Join 500+ agency owners who broke through $10k/month plateaus.">
+   
+   <!-- Favicon -->
+   <link rel="icon" type="image/png" href="favicon.png">
+   <title>Scale Your SMMA to $50k/Month | 90-Day Proven System</title>
+   
+   <!-- Fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=EB+Garamond:wght@400..800&display=swap" rel="stylesheet">
+   
+   <!-- Tailwind -->
+   <script src="https://cdn.tailwindcss.com"></script>
+   <script>
+     tailwind.config = {
+       theme: {
+         extend: {
+           fontFamily: {
+             sans: ['Inter', 'sans-serif'],
+             garamond: ['EB Garamond', 'serif'],
+           }
+         }
+       }
+     }
+   </script>
+   
+   <style>
+     * {
+       outline: 0px solid red;
+     }
+     
+     .animate {
+       opacity: 0.5;
+       scale: 0.8;
+       transition: opacity 0.6s ease-out, scale 0.6s ease-out;
+     }
+     
+     .animate.animated {
+       opacity: 1;
+       scale: 1;
+     }
+     
+     /* Custom styles */
+     .hero-gradient {
+       background: linear-gradient(90deg, rgba(254, 215, 170, 0.95) 0%, rgba(254, 215, 170, 0.85) 100%);
+     }
+     
+     .section-alt-bg {
+       background-color: #FFF9F5;
+     }
+     
+     .video-label {
+       transform: translateX(-50%) scale(0.9);
+     }
+   </style>
+ </head>
+ 
+ <body class="font-sans bg-white">
+   <!-- ===== Hero Section ===== -->
+   <section class="relative bg-[url('herobg.webp')] bg-cover bg-center">
+     <div class="hero-gradient">
+       <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center px-6 py-16 md:px-12 gap-12 md:py-24">
+         <!-- Left Column -->
+         <div class="space-y-6 text-left">
+           <span class="animate inline-block text-sm font-semibold text-green-600">
+             <i class="fas fa-rocket mr-1"></i> 500+ Agency Owners Scaling Past $50k/Mo
+           </span>
+           
+           <h1 class="animate font-garamond text-gray-900 text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+             The <span class="text-orange-600">Proven 90-Day System</span> To Scale Your SMMA
+           </h1>
+           
+           <p class="animate text-lg md:text-xl text-gray-700">
+             Break through your revenue plateaus with our battle-tested client acquisition framework - <strong>no paid ads required</strong>.
+           </p>
+           
+           <div class="flex flex-wrap text-center gap-4 pt-4">
+             <a href="#apply" class="animate w-80 cta-button bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-full text-lg transition-all duration-300 hover:shadow-xl">
+               Apply Now
+             </a>
+             <a href="#video" class="animate w-80 cta-button bg-white hover:bg-gray-50 text-gray-800 border border-gray-200 font-medium py-3 px-8 rounded-full text-lg transition-all duration-300 hover:shadow-md">
+               <i class="fas fa-play-circle mr-2"></i> Watch Case Study
+             </a>
+           </div>
+         </div>
+         
+         <!-- Right Column (Video) -->
+         <div class="relative" id="video">
+           <div class="animate aspect-video rounded-xl overflow-hidden shadow-2xl border-4 border-white">
+             <iframe class="w-full h-full lazyload" src="https://www.youtube.com/embed/1A5V-P-u7Oc?modestbranding=1&rel=0" frameborder="0" allowfullscreen></iframe>
+           </div>
+           <div class="animate video-label absolute bottom-[-1rem] left-1/2 bg-white px-3 py-1 rounded-full shadow-sm text-xs text-center font-medium text-orange-600">
+             Real $50k/mo Case Study
+           </div>
+         </div>
+       </div>
+     </div>
+   </section>
+   
+   <!-- ===== Social Proof Section ===== -->
+   <section class="section-alt-bg py-16 px-6 md:px-12">
+     <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+       <!-- Image with Badges -->
+       <div class="relative mx-auto w-full max-w-md">
+         <div class="aspect-square overflow-hidden rounded-lg shadow-xl">
+           <img src="hero.webp" alt="Agency owner success" class="animate w-full h-full object-cover scale-x-[-1]">
+         </div>
+         
+         <!-- Floating Badges -->
+         <div class="animate absolute -top-4 -right-4 bg-white p-2 rounded-lg shadow-md border border-orange-100">
+           <div class="flex items-center gap-2">
+             <div class="bg-green-100 p-1.5 rounded-full">
+               <i class="fas fa-dollar-sign text-green-600 text-sm"></i>
+             </div>
+             <span class="font-bold text-gray-800 text-sm">$50k+/mo</span>
+           </div>
+         </div>
+         
+         <div class="animate absolute -bottom-4 -left-4 bg-white p-2 rounded-lg shadow-md border border-orange-100">
+           <div class="flex items-center gap-2">
+             <div class="bg-blue-100 p-1.5 rounded-full">
+               <i class="fas fa-user-friends text-blue-600 text-sm"></i>
+             </div>
+             <span class="font-bold text-gray-800 text-sm">500+ Clients</span>
+           </div>
+         </div>
+       </div>
+       
+       <!-- Content -->
+       <div class="space-y-6">
+         <h2 class="animate font-garamond text-3xl md:text-4xl font-bold text-gray-900">
+           From <span class="text-orange-600">Struggling</span> to <span class="text-green-600">Scaling</span> in 90 Days
+         </h2>
+         
+         <p class="animate text-lg text-gray-700">
+           Our clients average <strong>3-5x revenue growth</strong> within their first 90 days by implementing:
+         </p>
+         
+         <ul class="space-y-4">
+           <li class="animate flex items-start gap-3">
+             <div class="bg-green-100 p-2 rounded-full mt-1 flex-shrink-0">
+               <i class="fas fa-check text-green-600"></i>
+             </div>
+             <div>
+               <h3 class="font-bold text-gray-900">High-Ticket Client Framework</h3>
+               <p class="text-gray-600">Convert leads into $5k-$10k/month clients consistently</p>
+             </div>
+           </li>
+           
+           <li class="animate flex items-start gap-3">
+             <div class="bg-green-100 p-2 rounded-full mt-1 flex-shrink-0">
+               <i class="fas fa-check text-green-600"></i>
+             </div>
+             <div>
+               <h3 class="font-bold text-gray-900">Done-For-You Templates</h3>
+               <p class="text-gray-600">Proven scripts, contracts, and sales processes</p>
+             </div>
+           </li>
+           
+           <li class="animate flex items-start gap-3">
+             <div class="bg-green-100 p-2 rounded-full mt-1 flex-shrink-0">
+               <i class="fas fa-check text-green-600"></i>
+             </div>
+             <div>
+               <h3 class="font-bold text-gray-900">Accountability Coaching</h3>
+               <p class="text-gray-600">Weekly 1:1 calls to keep you on track</p>
+             </div>
+           </li>
+         </ul>
+       </div>
+     </div>
+   </section>
+   
+   <!-- ===== Results Carousel ===== -->
+   <section class="py-16 px-6 bg-gradient-to-b from-white to-orange-50 overflow-hidden">
+     <div class="max-w-7xl mx-auto">
+       <div class="text-center mb-12">
+         <h2 class="animate font-garamond text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+           Real <span class="text-orange-600">Agency Owner</span> Results
+         </h2>
+         <p class="animate text-lg text-gray-600 max-w-3xl mx-auto">
+           Don't take our word for it - see what our clients say
+         </p>
+       </div>
+       
+       <!-- Glide Carousel Container -->
+       <div class="glide relative max-w-5xl mx-auto">
+         <div class="glide__track overflow-visible" data-glide-el="track">
+           <ul class="glide__slides flex items-stretch">
+             <li class="glide__slide px-2">
+               <div class="bg-white p-6 rounded-xl h-full shadow-md border border-gray-100">
+                 <div class="flex items-center gap-4 mb-4">
+                   <img src="img1.webp" alt="Client Mark T." class="w-12 h-12 rounded-full object-cover" loading="lazy">
+                   <div>
+                     <h4 class="font-bold">Mark T.</h4>
+                     <p class="text-sm text-gray-600">From $8k to $62k/mo</p>
+                   </div>
+                 </div>
+                 <p class="text-gray-700 italic">"I was stuck at $8k for months. In 90 days I landed 3 clients at $15k/mo each. This system works."</p>
+               </div>
+             </li>
+             <li class="glide__slide px-2">
+               <div class="bg-white p-6 rounded-xl h-full shadow-md border border-gray-100">
+                 <div class="flex items-center gap-4 mb-4">
+                   <img src="img2.webp" alt="Client Sarah K." class="w-12 h-12 rounded-full object-cover" loading="lazy">
+                   <div>
+                     <h4 class="font-bold">Sarah K.</h4>
+                     <p class="text-sm text-gray-600">From $12k to $78k/mo</p>
+                   </div>
+                 </div>
+                 <p class="text-gray-700 italic">"The high-ticket framework alone tripled my average client value. Worth every penny."</p>
+               </div>
+             </li>
+             <li class="glide__slide px-2">
+               <div class="bg-white p-6 rounded-xl h-full shadow-md border border-gray-100">
+                 <div class="flex items-center gap-4 mb-4">
+                   <img src="img3.webp" alt="Client James L." class="w-12 h-12 rounded-full object-cover" loading="lazy">
+                   <div>
+                     <h4 class="font-bold">James L.</h4>
+                     <p class="text-sm text-gray-600">From $0 to $53k/mo</p>
+                   </div>
+                 </div>
+                 <p class="text-gray-700 italic">"Started with no clients. Followed the system and hit $50k in 11 weeks. Mind blown."</p>
+               </div>
+             </li>
+             <li class="glide__slide px-2">
+               <div class="bg-white p-6 rounded-xl h-full shadow-md border border-gray-100">
+                 <div class="flex items-center gap-4 mb-4">
+                   <img src="img4.webp" alt="Client Priya M." class="w-12 h-12 rounded-full object-cover" loading="lazy">
+                   <div>
+                     <h4 class="font-bold">Priya M.</h4>
+                     <p class="text-sm text-gray-600">From $5k to $67k/mo</p>
+                   </div>
+                 </div>
+                 <p class="text-gray-700 italic">"The templates saved me 20+ hours/week. Now I focus on scaling instead of operations."</p>
+               </div>
+             </li>
+             <li class="glide__slide px-2">
+               <div class="bg-white p-6 rounded-xl h-full shadow-md border border-gray-100">
+                 <div class="flex items-center gap-4 mb-4">
+                   <img src="img5.webp" alt="Client David R." class="w-12 h-12 rounded-full object-cover" loading="lazy">
+                   <div>
+                     <h4 class="font-bold">David R.</h4>
+                     <p class="text-sm text-gray-600">From $15k to $112k/mo</p>
+                   </div>
+                 </div>
+                 <p class="text-gray-700 italic">"My agency went from stressful to scalable. The coaching made all the difference."</p>
+               </div>
+             </li>
+           </ul>
+         </div>
+         
+         <!-- Navigation Controls -->
+         <div class="glide__arrows flex justify-center items-center gap-4 mt-8" data-glide-el="controls">
+           <button class="glide__arrow glide__arrow--left bg-green-600 hover:bg-green-700 text-white p-3 rounded-full transition-colors" data-glide-dir="<">
+             <i class="fas fa-chevron-left"></i>
+           </button>
+           <div class="glide__bullets flex gap-2" data-glide-el="controls[nav]">
+             <button class="glide__bullet w-3 h-3 rounded-full bg-gray-300 hover:bg-green-600 transition-colors" data-glide-dir="=0"></button>
+             <button class="glide__bullet w-3 h-3 rounded-full bg-gray-300 hover:bg-green-600 transition-colors" data-glide-dir="=1"></button>
+             <button class="glide__bullet w-3 h-3 rounded-full bg-gray-300 hover:bg-green-600 transition-colors" data-glide-dir="=2"></button>
+             <button class="glide__bullet w-3 h-3 rounded-full bg-gray-300 hover:bg-green-600 transition-colors" data-glide-dir="=3"></button>
+             <button class="glide__bullet w-3 h-3 rounded-full bg-gray-300 hover:bg-green-600 transition-colors" data-glide-dir="=4"></button>
+           </div>
+           <button class="glide__arrow glide__arrow--right bg-green-600 hover:bg-green-700 text-white p-3 rounded-full transition-colors" data-glide-dir=">">
+             <i class="fas fa-chevron-right"></i>
+           </button>
+         </div>
+       </div>
+     </div>
+   </section>
+   
+   <!-- ===== FAQ Section ===== -->
+   <section class="py-16 px-6 bg-orange-50" id="faq">
+     <div class="max-w-4xl mx-auto">
+       <div class="text-center mb-12">
+         <h2 class="animate font-garamond text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+           Your <span class="text-orange-600">Questions</span> Answered
+         </h2>
+         <p class="animate text-lg text-gray-600">
+           Everything you need to know before applying
+         </p>
+       </div>
+       
+       <div class="space-y-4">
+         <!-- FAQ 1 -->
+         <div class="animate bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+           <button class="faq-toggle flex justify-between items-center w-full text-left">
+             <h3 class="text-lg font-bold text-gray-900">What's included in the program?</h3>
+             <i class="fas fa-chevron-down text-orange-600 transition-transform"></i>
+           </button>
+           <div class="faq-content mt-4 text-gray-700 hidden">
+             <p>You'll get our complete client acquisition framework including:</p>
+             <ul class="list-disc pl-5 mt-2 space-y-1">
+               <li>High-ticket outreach templates</li>
+               <li>Sales call scripts</li>
+               <li>Contract templates</li>
+               <li>Weekly 1:1 coaching calls</li>
+               <li>Private community access</li>
+               <li>Scaling playbooks</li>
+             </ul>
+           </div>
+         </div>
+         
+         <!-- FAQ 2 -->
+         <div class="animate bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+           <button class="faq-toggle flex justify-between items-center w-full text-left">
+             <h3 class="text-lg font-bold text-gray-900">Is there a money-back guarantee?</h3>
+             <i class="fas fa-chevron-down text-orange-600 transition-transform"></i>
+           </button>
+           <div class="faq-content mt-4 text-gray-700 hidden">
+             <p>Yes! We offer a 30-day satisfaction guarantee. If you implement our strategies and complete the assigned actions without seeing results, we'll refund your investment.</p>
+           </div>
+         </div>
+         
+         <!-- FAQ 3 -->
+         <div class="animate bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+           <button class="faq-toggle flex justify-between items-center w-full text-left">
+             <h3 class="text-lg font-bold text-gray-900">How much time does this require weekly?</h3>
+             <i class="fas fa-chevron-down text-orange-600 transition-transform"></i>
+           </button>
+           <div class="faq-content mt-4 text-gray-700 hidden">
+             <p>The program is designed for busy agency owners:</p>
+             <ul class="list-disc pl-5 mt-2 space-y-1">
+               <li><strong>Minimum:</strong> 6-8 hours/week (implementation)</li>
+               <li><strong>Recommended:</strong> 10-12 hours/week (optimal growth)</li>
+               <li><strong>Weekly Commitment:</strong> 1 coaching call (60 mins) + implementation</li>
+             </ul>
+           </div>
+         </div>
+         
+         <!-- FAQ 4 -->
+         <div class="animate bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+           <button class="faq-toggle flex justify-between items-center w-full text-left">
+             <h3 class="text-lg font-bold text-gray-900">Do I need existing clients to join?</h3>
+             <i class="fas fa-chevron-down text-orange-600 transition-transform"></i>
+           </button>
+           <div class="faq-content mt-4 text-gray-700 hidden">
+             <p>No! The system works at any stage:</p>
+             <ul class="list-disc pl-5 mt-2 space-y-1">
+               <li><strong>Starting from $0:</strong> We provide lead generation frameworks</li>
+               <li><strong>$5k-$10k/month:</strong> Focus on converting to high-ticket</li>
+               <li><strong>$10k+:</strong> Scaling systems and team building</li>
+             </ul>
+           </div>
+         </div>
+         
+         <!-- FAQ 5 -->
+         <div class="animate bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+           <button class="faq-toggle flex justify-between items-center w-full text-left">
+             <h3 class="text-lg font-bold text-gray-900">When does the next cohort start?</h3>
+             <i class="fas fa-chevron-down text-orange-600 transition-transform"></i>
+           </button>
+           <div class="faq-content mt-4 text-gray-700 hidden">
+             <p>We run cohorts bi-weekly with limited seats:</p>
+             <ul class="list-disc pl-5 mt-2 space-y-1">
+               <li><strong>Next Start Date:</strong> <span id="next-cohort-date">January 15, 2024</span></li>
+               <li><strong>Application Deadline:</strong> 48 hours prior</li>
+               <li><strong>Cohort Size:</strong> Max 10 agency owners</li>
+             </ul>
+             <p class="mt-3 font-medium">Early applicants get bonus onboarding sessions.</p>
+           </div>
+         </div>
+       </div>
+     </div>
+   </section>
+   
+   <!-- ===== Results Breakdown Section ===== -->
+   <section class="py-16 px-6 bg-white">
+     <div class="max-w-5xl mx-auto">
+       <div class="text-center mb-12">
+         <h2 class="animate font-garamond text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+           The <span class="text-orange-600">Numbers</span> Behind Our Success
+         </h2>
+         <p class="animate text-lg text-gray-600 max-w-3xl mx-auto">
+           Here's what our clients achieve on average
+         </p>
+       </div>
+       
+       <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+         <!-- Stat 1 -->
+         <div class="animate bg-orange-50 p-6 rounded-xl text-center">
+           <div class="text-4xl font-bold text-orange-600 mb-2">3.5x</div>
+           <p class="text-gray-700">Revenue Growth</p>
+         </div>
+         
+         <!-- Stat 2 -->
+         <div class="animate bg-orange-50 p-6 rounded-xl text-center">
+           <div class="text-4xl font-bold text-orange-600 mb-2">87%</div>
+           <p class="text-gray-700">Client Retention</p>
+         </div>
+         
+         <!-- Stat 3 -->
+         <div class="animate bg-orange-50 p-6 rounded-xl text-center">
+           <div class="text-4xl font-bold text-orange-600 mb-2">63</div>
+           <p class="text-gray-700">Days to $50k</p>
+         </div>
+         
+         <!-- Stat 4 -->
+         <div class="animate bg-orange-50 p-6 rounded-xl text-center">
+           <div class="text-4xl font-bold text-orange-600 mb-2">5.2x</div>
+           <p class="text-gray-700">ROI</p>
+         </div>
+       </div>
+     </div>
+   </section>
+   
+   <!-- ===== Final CTA ===== -->
+   <section class="bg-gradient-to-r from-orange-500 to-orange-600 py-20 px-6" id="apply">
+     <div class="max-w-4xl mx-auto text-center text-white">
+       <h2 class="animate font-garamond text-3xl md:text-4xl font-bold mb-6">
+         Ready to <span class="text-white">Scale Beyond $50k/Month</span>?
+       </h2>
+       <p class="animate text-xl mb-8 opacity-90">
+         Join our next cohort - applications close in <span class="font-bold" id="days-remaining">3 days</span>.
+       </p>
+       <a href="#application-form" class="animate inline-block bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-10 rounded-full text-lg transition-all duration-300 hover:shadow-xl">
+         Apply for Mentorship →
+       </a>
+       <p class="animate mt-4 text-sm opacity-80">
+         <i class="fas fa-lock mr-1"></i> 100% confidential application
+       </p>
+     </div>
+   </section>
+   
+   <!-- ===== Application Form ===== -->
+   <section class="py-16 px-6 bg-white" id="application-form">
+     <div class="max-w-2xl mx-auto">
+       <div class="bg-orange-50 rounded-xl p-8 shadow-sm border border-orange-100">
+         <h3 class="font-garamond text-2xl md:text-3xl font-bold text-gray-900 mb-6 text-center">
+           Apply for the Next Cohort
+         </h3>
+         
+         <form class="space-y-4">
+           <div>
+             <label for="name" class="block text-gray-700 mb-2">Full Name</label>
+             <input type="text" id="name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-orange-500 focus:border-orange-500">
+           </div>
+           
+           <div>
+             <label for="email" class="block text-gray-700 mb-2">Email Address</label>
+             <input type="email" id="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-orange-500 focus:border-orange-500">
+           </div>
+           
+           <div>
+             <label for="revenue" class="block text-gray-700 mb-2">Current Monthly Revenue</label>
+             <select id="revenue" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-orange-500 focus:border-orange-500">
+               <option value="">Select your revenue</option>
+               <option value="0-5k">$0 - $5k</option>
+               <option value="5k-10k">$5k - $10k</option>
+               <option value="10k-20k">$10k - $20k</option>
+               <option value="20k+">$20k+</option>
+             </select>
+           </div>
+           
+           <div>
+             <label for="goals" class="block text-gray-700 mb-2">Your Biggest Challenge</label>
+             <textarea id="goals" rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-orange-500 focus:border-orange-500"></textarea>
+           </div>
+           
+           <button type="submit" class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-6 rounded-lg text-lg transition-all duration-300 mt-6">
+             Submit Application
+           </button>
+         </form>
+       </div>
+     </div>
+   </section>
+   
+   <!-- ===== Footer ===== -->
+   <footer class="bg-gray-900 text-gray-300 py-16 px-6">
+     <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+       <!-- Column 1 -->
+       <div>
+         <h3 class="animate text-white font-bold text-lg mb-4">Scale Your SMMA</h3>
+         <p class="animate mb-4">Proven systems to help agency owners break through revenue plateaus and scale predictably.</p>
+         <div class="flex gap-4">
+           <a href="#" aria-label="Instagram" class="animate text-gray-400 hover:text-white transition">
+             <i class="fab fa-instagram text-xl"></i>
+           </a>
+           <a href="#" aria-label="Facebook" class="animate text-gray-400 hover:text-white transition">
+             <i class="fab fa-facebook text-xl"></i>
+           </a>
+           <a href="#" aria-label="LinkedIn" class="animate text-gray-400 hover:text-white transition">
+             <i class="fab fa-linkedin text-xl"></i>
+           </a>
+           <a href="#" aria-label="YouTube" class="animate text-gray-400 hover:text-white transition">
+             <i class="fab fa-youtube text-xl"></i>
+           </a>
+         </div>
+       </div>
+       
+       <!-- Column 2 -->
+       <div>
+         <h4 class="animate text-white font-bold text-lg mb-4">Program</h4>
+         <ul class="space-y-2">
+           <li><a href="#" class="animate hover:text-white transition">How It Works</a></li>
+           <li><a href="#" class="animate hover:text-white transition">Success Stories</a></li>
+           <li><a href="#" class="animate hover:text-white transition">Pricing</a></li>
+           <li><a href="#faq" class="animate hover:text-white transition">FAQ</a></li>
+         </ul>
+       </div>
+       
+       <!-- Column 3 -->
+       <div>
+         <h4 class="animate text-white font-bold text-lg mb-4">Resources</h4>
+         <ul class="space-y-2">
+           <li><a href="#" class="animate hover:text-white transition">Free Training</a></li>
+           <li><a href="#" class="animate hover:text-white transition">Case Studies</a></li>
+           <li><a href="#" class="animate hover:text-white transition">Templates</a></li>
+           <li><a href="#" class="animate hover:text-white transition">Podcast</a></li>
+         </ul>
+       </div>
+       
+       <!-- Column 4 -->
+       <div>
+         <h4 class="animate text-white font-bold text-lg mb-4">Company</h4>
+         <ul class="space-y-2">
+           <li><a href="#" class="animate hover:text-white transition">About Us</a></li>
+           <li><a href="#" class="animate hover:text-white transition">Contact</a></li>
+           <li><a href="#" class="animate hover:text-white transition">Careers</a></li>
+           <li><a href="#" class="animate hover:text-white transition">Legal</a></li>
+         </ul>
+       </div>
+     </div>
+     
+     <div class="border-t border-gray-800 mt-12 pt-8 text-center text-sm">
+       <div class="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-8">
+         <p class="animate">&copy; <span id="current-year">2024</span> Scale Your SMMA. All rights reserved.</p>
+         <div class="flex gap-4">
+           <a href="#" class="animate text-gray-400 hover:text-white transition text-sm">Privacy Policy</a>
+           <a href="#" class="animate text-gray-400 hover:text-white transition text-sm">Terms of Service</a>
+           <a href="#" class="animate text-gray-400 hover:text-white transition text-sm">Cookie Policy</a>
+         </div>
+       </div>
+     </div>
+   </footer>
+   
+   <!-- ===== JavaScript ===== -->
+   <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+   
+   <script>
+     
+       // Select all elements with the animate-on-scroll class
+       const animatedElements = document.querySelectorAll('.animate');
+       
+       // Create Intersection Observer
+       const observer = new IntersectionObserver((entries) => {
+         entries.forEach(entry => {
+           if (entry.isIntersecting) {
+             // When element comes into view
+             entry.target.classList.add('animated');
+           } else {
+             // When element leaves view (reverse animation)
+             entry.target.classList.remove('animated');
+           }
+         });
+       }, {
+         threshold: 0.1 // Trigger when 10% of element is visible
+       });
+       // Add delay based on element's index
+       animatedElements.forEach((element, index) => {
+         element.style.transitionDelay = `0s`;
+       });
+       // Observe each animated element
+       animatedElements.forEach(element => {
+         observer.observe(element);
+       });
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" href="favicon.png">
-  <title>Website</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=EB+Garamond:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  
-  <!-- GSAP CDN -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-  <!-- Font Awesome CDN -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <!-- Glide.js CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
-  
-  <!-- Optional: Theme styles -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css">
-  <style>
-    * {
-      outline: 0px solid red;
-    }
-  </style>
-</head>
-
-<body id="body" class="">
-  <div class="bg-[url('herobg.webp')] grid grid-cols-1 md:grid-cols-2 items-center px-6 py-8 md:px-12 gap-8 md:py-36 md:h-[50vh]">
-    <!-- Left Content -->
-    <div class="space-y-8 text-left md:text-left text-balance">
-      <div class="space-y-4">
-        <!-- Pre-Headline (Social Proof) -->
-        <p class="fade-in text-xs md:text-lg font-semibold text-green-600">500+ SMMA Owners Past $50k/mo</p>
-        
-        <!-- Headline (Problem & Solution) -->
-        <h1 class="fade-in font-garamond text-gray-700 text-3xl md:text-5xl font-bold">
-          Scale your SMMA to $50k/mo in 90 Days
-        </h1>
-        
-        <!-- Supporting Text -->
-        <p class="fade-in text-lg md:text-xl text-gray-500">
-          We've helped agency owners stuck at $5k-$10k months break past plateaus
-          using proven client acquisition systems and high-ticket sales strategies.
-        </p>
-      </div>
-      <!-- CTA Button -->
-      <a href="#" class="fade-in shadow-[4px_4px_12px_2px] shadow-gray-700 md:text-2xl bg-green-600 text-white font-bold py-3 px-6 md:py-6 md:px-12 rounded-3xl inline-block">
-        Apply for Mentorship
-      </a>
-    </div>
-    <!-- Right Column (Video with Arrow Image) -->
-    <div class="w-full relative">
-      
-      
-      
-      <!-- Video -->
-      <div class="fade-in relative w-full aspect-video rounded-lg overflow-hidden shadow-lg">
-        <!-- Arrow Image (Hidden on Mobile) 
-        <img src="up-arrow.png" alt="Upward Arrow" class="absolute scale-125 z-10 bottom-[250px] left-1/2 transform -translate-x-1/2 w-16 md:w-20 hidden md:block">-->
-        <iframe class="w-full h-full rounded-xl" src="https://www.youtube.com/embed/EbQ6gb_H9ps?si=-Mi534ksXAqNHzR3&rel=0&modestbranding=1&showinfo=0&autoplay=0&controls=1" frameborder="0" allowfullscreen>
-        </iframe>
-      </div>
-    </div>
-  </div>
-  
-  
-  <div class="bg-orange-100 grid grid-cols-1 md:grid-cols-2 items-center gap-8 px-6 py-12 md:px-12 md:p-36 md:h-[50vh]">
-    <!-- Left (Hero Image with Floating Elements) -->
-    <div class="relative w-full max-w-lg mx-auto">
-      <div class="fade-in w-full aspect-[1] rounded-lg">
-        <img id="fadeImage" src="hero.webp" alt="Success Image" class="w-full h-full object-cover scale-x-[-1] transition-all duration-500">
-      </div>
-      
-      <!-- Floating Elements -->
-      <div class="fade-in shadow-sm shadow-black absolute top-12 right-16 bg-white p-2 md:p-3 rounded-lg shadow-md flex items-center space-x-2 text-xs md:text-xl">
-        <i class="fas fa-dollar-sign text-green-600"></i>
-        <span class="text-neutral-500">$50k+/mo</span>
-      </div>
-      <div class="fade-in shadow-sm shadow-black absolute top-24 left-4 bg-white p-2 md:p-3 rounded-lg shadow-md flex items-center space-x-2 text-xs md:text-xl">
-        <i class="fas fa-chart-line text-blue-600"></i>
-        <span class="text-neutral-500">10M+ views</span>
-      </div>
-      <div class="fade-in shadow-sm shadow-black absolute bottom-4 left-4 bg-white p-2 md:p-3 rounded-lg shadow-md flex items-center space-x-2 text-xs md:text-xl">
-        <i class="fas fa-user-friends text-blue-600"></i>
-        <span class="text-neutral-500">500+ Clients</span>
-      </div>
-      <div class="fade-in shadow-sm shadow-black absolute bottom-16 right-2 bg-white p-2 md:p-3 rounded-lg shadow-md flex items-center space-x-2 text-xs md:text-xl">
-        <i class="fas fa-clock text-yellow-600"></i>
-        <span class="text-neutral-500">Scaled in 90 Days</span>
-      </div>
-    </div>
-    
-    
-    <!-- Right Column (Content) -->
-    <div class="space-y-6 text-left">
-      <h2 class="fade-in text-2xl md:text-3xl font-garamond font-bold text-gray-700">Unlock the Proven System to Scale to $50k+/mo</h2>
-      <p class="fade-in text-lg text-gray-500">
-        Learn how top SMMA owners rapidly scale past plateaus with tested client acquisition strategies and retention systems.
-      </p>
-      
-      <!-- Bullet Points -->
-      <ul class="space-y-3 text-gray-700">
-        <li class="fade-in flex items-center">
-          <i class="fas fa-check-circle text-green-600 mr-3"></i> 100% proven & repeatable system.
-        </li>
-        <li class="fade-in flex items-center">
-          <i class="fas fa-check-circle text-green-600 mr-3"></i> Works even if you're starting from scratch.
-        </li>
-        <li class="fade-in flex items-center">
-          <i class="fas fa-check-circle text-green-600 mr-3"></i> No paid ads or unnecessary complexity.
-        </li>
-      </ul>
-    </div>
-  </div>
-  
-  
-  <div class="bg-white grid grid-cols-1 items-center py-12 md:px-12 md:py-36">
-    <div class="space-y-3 m-3 text-center">
-      <h2 class="fade-in text-2xl md:text-3xl font-garamond font-bold text-gray-700">Client Interviews</h2>
-      <p class="fade-in text-lg text-gray-500">
-        Real Interviews with my clients(Videos yet to be uploaded)
-      </p>
-    </div>
-    <div class="glide my-6">
-      <div class="glide__track" data-glide-el="track">
-        <ul class="glide__slides">
-          <li class="glide__slide transition-all duration-200"><img src="img1.webp" alt="Slide 1"></li>
-          <li class="glide__slide transition-all duration-200"><img src="img2.webp" alt="Slide 2"></li>
-          <li class="glide__slide transition-all duration-200"><img src="img3.webp" alt="Slide 3"></li>
-          <li class="glide__slide transition-all duration-200"><img src="img4.webp" alt="Slide 4"></li>
-          <li class="glide__slide transition-all duration-200"><img src="img5.webp" alt="Slide 5"></li>
-          <li class="glide__slide transition-all duration-200"><img src="img6.webp" alt="Slide 6"></li>
-        </ul>
-      </div>
-      
-      <!-- Navigation (Optional) -->
-      <div class="glide__arrows" data-glide-el="controls">
-        <button class="glide__arrow glide__arrow--left bg-green-400 md:text-4xl  md:w-16 aspect-square" data-glide-dir="<">‹</button>
-        <button class="glide__arrow glide__arrow--right bg-green-400 md:text-4xl md:w-16 aspect-square" data-glide-dir=">">›</button>
-      </div>
-    </div>
-  </div>
-  <!-- FAQ Section -->
-  <section class="bg-emerald-700 text-white py-12 md:py-36 px-6 md:px-12">
-    <div class="max-w-3xl mx-auto">
-      <!-- Title -->
-      <h2 class="fade-in text-2xl md:text-4xl font-bold text-center mb-10">Frequently Asked Questions</h2>
-      
-      <!-- FAQ Container -->
-      <div class="space-y-6">
-        
-        <!-- FAQ Item -->
-        <div class="fade-in border-b border-gray-100">
-          <button class="flex justify-between items-center w-full text-left text-lg md:text-xl font-semibold py-4 transition-all faq-toggle">
-            What makes this program different?
-            <span class="arrow transition-transform duration-300 transform rotate-0">▼</span>
-          </button>
-          <p class="faq-answer opacity-0 max-h-0 overflow-hidden transition-all duration-500 text-gray-300 mt-2 text-base md:text-lg">
-            Our program focuses on personalized strategies, real-world case studies, and proven scaling methods.
-          </p>
-        </div>
-        
-        <!-- FAQ Item -->
-        <div class="fade-in border-b border-gray-100">
-          <button class="flex justify-between items-center w-full text-left text-lg md:text-xl font-semibold py-4 transition-all faq-toggle">
-            How soon can I see results?
-            <span class="arrow transition-transform duration-300 transform rotate-0">▼</span>
-          </button>
-          <p class="faq-answer opacity-0 max-h-0 overflow-hidden transition-all duration-500 text-gray-300 mt-2 text-base md:text-lg">
-            Most clients see noticeable growth within 30-60 days if they follow the system consistently.
-          </p>
-        </div>
-        
-        <!-- FAQ Item -->
-        <div class="fade-in border-b border-gray-100">
-          <button class="flex justify-between items-center w-full text-left text-lg md:text-xl font-semibold py-4 transition-all faq-toggle">
-            Do I need experience to start?
-            <span class="arrow transition-transform duration-300 transform rotate-0">▼</span>
-          </button>
-          <p class="faq-answer opacity-0 max-h-0 overflow-hidden transition-all duration-500 text-gray-300 mt-2 text-base md:text-lg">
-            No! Whether you're just starting or scaling, we tailor strategies to your level.
-          </p>
-        </div>
-        <!-- FAQ Item -->
-        <div class="fade-in border-b border-gray-100">
-          <button class="flex justify-between items-center w-full text-left text-lg md:text-xl font-semibold py-4 transition-all faq-toggle">
-            What if I have a busy schedule?
-            <span class="arrow transition-transform duration-300 transform rotate-0">▼</span>
-          </button>
-          <p class="faq-answer opacity-0 max-h-0 overflow-hidden transition-all duration-500 text-gray-300 mt-2 text-base md:text-lg">
-            The program is designed for flexibility, allowing you to implement strategies at your own pace.
-          </p>
-        </div>
-        
-        <!-- FAQ Item -->
-        <div class="fade-in border-b border-gray-100">
-          <button class="flex justify-between items-center w-full text-left text-lg md:text-xl font-semibold py-4 transition-all faq-toggle">
-            Is there any support if I get stuck?
-            <span class="arrow transition-transform duration-300 transform rotate-0">▼</span>
-          </button>
-          <p class="faq-answer opacity-0 max-h-0 overflow-hidden transition-all duration-500 text-gray-300 mt-2 text-base md:text-lg">
-            Yes! You'll get access to coaching calls, community support, and detailed guidance to help you succeed.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-  <!-- JavaScript -->
-  <script>
-    document.querySelectorAll(".faq-toggle").forEach((btn) => {
-      btn.addEventListener("click", () => {
-        let answer = btn.nextElementSibling;
-        let arrow = btn.querySelector(".arrow");
-        
-        if (answer.classList.contains("opacity-0")) {
-          // Expand
-          answer.style.maxHeight = answer.scrollHeight + "px";
-          answer.classList.remove("opacity-0");
-        } else {
-          // Collapse
-          answer.style.maxHeight = "0px";
-          answer.classList.add("opacity-0");
-        }
-        
-        arrow.classList.toggle("rotate-180");
-      });
-    });
-  </script>
-  
-  
-  <!-- Content Goes Here -->
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ["Inter", "sans-serif"],
-            garamond: ["EB Garamond", "serif"],
-          }
-        }
-      }
-    }
-  </script>
-  <script>
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            gsap.to(entry.target, {
-              opacity: 1,
-              scale: 1,
-              duration: 0.6,
-              ease: "power2.out",
-              delay: 0.15,
-            });
-          } else {
-            gsap.to(entry.target, {
-              opacity: 0,
-              scale: 0.8,
-              duration: 0.6,
-              ease: "power2.out",
-            });
-          }
-        });
-      }, { threshold: 0.2 }
-    );
-    
-    document.querySelectorAll(".fade-in").forEach((element) => {
-      gsap.set(element, { opacity: 0, scale: 0.8 }); // Initial state
-      observer.observe(element);
-    });
-    
-    gsap.fromTo("#fadeImage", { filter: "grayscale(100%)" }, // Start as fully grayscale
-      {
-        filter: "grayscale(40%)", // End with full color
-        duration: 1,
-        ease: "power1.out",
-        scrollTrigger: {
-          trigger: "#fadeImage",
-          start: "top center", // Start animation when into viewport
-          end: "center center", // Fully colored by 50%
-          scrub: true, // Smooth transition while scrolling
-        }
-      }
-    );
-  </script>
-  <!-- Glide.js JavaScript -->
-  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/glide.min.js"></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      let glide = new Glide(".glide", {
-        type: "carousel",
-        startAt: 0,
-        perView: 3,
-        focusAt: "center",
-        peek: { before: 10, after: 10 },
-        breakpoints: {
-          1024: { perView: 2 },
-          768: { perView: 1, peek: { before: 25, after: 25 } },
-        },
-      });
-      
-      function updateSlideStyles() {
-        let slides = document.querySelectorAll(".glide__slide");
-        
-        // Apply grayscale to all slides first
-        slides.forEach((slide) => (slide.style.filter = "grayscale(100%)"));
-        
-        // Determine perView based on screen size
-        let perView = window.innerWidth >= 1024 ? 3 : window.innerWidth >= 768 ? 2 : 1;
-        
-        // Set active index based on screen size
-        let activeIndex = glide.index + (perView === 1 ? 3 : 4);
-        
-        // Ensure index is within bounds before removing grayscale
-        if (slides[activeIndex]) {
-          slides[activeIndex].style.filter = "grayscale(0%)";
-        }
-      }
-      
-      glide.on("run.after", updateSlideStyles);
-      glide.mount();
-      
-      // Ensure initial state is applied
-      updateSlideStyles();
-    });
-  </script>
-</body>
-
-</html> 
+     // Dynamic Date Calculations
+     document.addEventListener('DOMContentLoaded', function() {
+       // Set current year
+       document.getElementById('current-year').textContent = new Date().getFullYear();
+       
+       // Set next cohort date (3 days from now)
+       const now = new Date();
+       const nextCohort = new Date(now);
+       nextCohort.setDate(now.getDate() + 3);
+       
+       const options = { year: 'numeric', month: 'long', day: 'numeric' };
+       document.getElementById('next-cohort-date').textContent =
+         nextCohort.toLocaleDateString('en-US', options);
+       
+       // Countdown timer
+       const countdownEl = document.getElementById('days-remaining');
+       const diffTime = nextCohort - now;
+       const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+       countdownEl.textContent = `${diffDays} ${diffDays === 1 ? 'day' : 'days'}`;
+       
+       // Initialize Glide Carousel
+       new Glide('.glide', {
+         type: 'carousel',
+         perView: 3,
+         gap: 24,
+         autoplay: 4000,
+         hoverpause: true,
+         breakpoints: {
+           1024: { perView: 2 },
+           768: { perView: 1 }
+         }
+       }).mount();
+       
+       // FAQ Toggle Functionality
+       document.querySelectorAll('.faq-toggle').forEach(button => {
+         button.addEventListener('click', () => {
+           const content = button.nextElementSibling;
+           const icon = button.querySelector('i');
+           
+           // Toggle content visibility
+           content.classList.toggle('hidden');
+           
+           // Toggle icon rotation
+           icon.classList.toggle('rotate-180');
+         });
+       });
+       
+       // Form Submission Handling
+       const form = document.querySelector('form');
+       if (form) {
+         form.addEventListener('submit', function(e) {
+           e.preventDefault();
+           
+           // Get form values
+           const formData = {
+             name: document.getElementById('name').value,
+             email: document.getElementById('email').value,
+             revenue: document.getElementById('revenue').value,
+             goals: document.getElementById('goals').value
+           };
+           
+           // Here you would typically send the data to your server
+           console.log('Form submitted:', formData);
+           
+           // Show success message (in a real implementation, you'd want something more robust)
+           alert('Application submitted successfully! We\'ll be in touch soon.');
+           form.reset();
+         });
+       }
+     });
+   </script>
+ </body>
+ 
+ </html>
